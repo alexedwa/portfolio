@@ -25,7 +25,7 @@ function Projects() {
                                 </CardDescription>
                                 <CardContent>
                                     <div className="flex justify-center items-center pt-5">
-                                        <img src={EA} className="w-auto h-auto"/>
+                                        <img src={EA} className="w-auto h-auto" alt="EA Dashboard homepage"/>
                                     </div>
                                 </CardContent>
                             </CardHeader>
@@ -44,7 +44,8 @@ function Projects() {
                                 </CardDescription>
                                 <CardContent>
                                     <div className="flex justify-center items-center pt-5">
-                                        <a href="https://github.com/alexedwa/git-story"><img src={GitStory} className="w-auto h-auto"></img></a>
+                                        <a href="https://github.com/alexedwa/git-story">
+                                        <img src={GitStory} className="w-auto h-auto" alt="Git Story homepage"/></a>
                                     </div>
                                 </CardContent>
                             </CardHeader>
