@@ -22,7 +22,7 @@ function Header() {
                         <Separator orientation="vertical"/>
                         <a className="hover:bg-gray-300 transition-colors p-1 rounded-sm" href="#projects">Projects</a>
                         <Separator orientation="vertical" />
-                        <a className="hover:bg-gray-300 transition-colors p-1 rounded-sm">Contact</a>
+                        <a className="hover:bg-gray-300 transition-colors p-1 rounded-sm" href="mailto:alexedwa123@gmail.com">Contact</a>
                         <Separator orientation="vertical" />
                         <a className="hover:bg-gray-300 transition-colors p-1 rounded-sm" href="https://github.com/alexedwa" target="_blank">GitHub</a>
                     </nav>
@@ -34,7 +34,7 @@ function Header() {
                             <DropdownMenuContent>
                                 <DropdownMenuItem><a href="#about">About Me</a></DropdownMenuItem>
                                 <DropdownMenuItem><a href="#projects">Projects</a></DropdownMenuItem>
-                                <DropdownMenuItem><a>Contacts</a></DropdownMenuItem>
+                                <DropdownMenuItem><a href="mailto:alexedwa123@gmail.com">Contacts</a></DropdownMenuItem>
                                 <DropdownMenuItem><a href="https://github.com/alexedwa" target="_blank">GitHub</a></DropdownMenuItem>
                             </DropdownMenuContent>
                         </DropdownMenu>
