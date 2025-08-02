@@ -18,7 +18,7 @@ function Header() {
 
                     {/* Desktop menu buttons */}
                     <nav className="hidden md:flex item-center space-x-3">
-                        <a className="hover:bg-gray-300 transition-colors p-1 rounded-sm">About Me</a>
+                        <a className="hover:bg-gray-300 transition-colors p-1 rounded-sm" href="#about">About Me</a>
                         <Separator orientation="vertical"/>
                         <a className="hover:bg-gray-300 transition-colors p-1 rounded-sm">Projects</a>
                         <Separator orientation="vertical" />
@@ -32,7 +32,7 @@ function Header() {
                         <DropdownMenu>
                             <DropdownMenuTrigger>☰</DropdownMenuTrigger>
                             <DropdownMenuContent>
-                                <DropdownMenuItem><a>About Me</a></DropdownMenuItem>
+                                <DropdownMenuItem><a href="#about">About Me</a></DropdownMenuItem>
                                 <DropdownMenuItem><a>Projects</a></DropdownMenuItem>
                                 <DropdownMenuItem><a>Contacts</a></DropdownMenuItem>
                                 <DropdownMenuItem><a href="https://github.com/alexedwa" target="_blank">GitHub</a></DropdownMenuItem>
