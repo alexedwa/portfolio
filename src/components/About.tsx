@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 function About() {
     return(
         <div className="px-4 py-8 bg-gray-100 w-screen m-0 items-center justify-center" id="about">
-            <div className="container mx-auto px-4 rounded-sm p-10 bg-gray-200 m-2 shadow-md hover:shadow-xs transition-shadow duration-300">
+            <div className="container mx-auto px-4 mt-20 rounded-sm p-10 bg-gray-200 m-2 shadow-md hover:shadow-xs transition-shadow duration-300">
                 <h1 className="text-center text-2xl mb-5">About Me</h1>
                 <p className="text-justify">
                 Hello, my name is Alex, and I am currently a Computer Science 
