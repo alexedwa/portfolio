@@ -21,7 +21,8 @@ function Projects() {
                                     The Evolutionary Algorithm (EA) Dashboard was a project that allowed
                                     for users to visualise how different EAs tackle different test problems in real
                                     time. This project also allowed users to edit the different parameters for
-                                    each algorithm to see how each would differ.
+                                    each algorithm to see how each would differ. This project was created in a team 
+                                    where I had used Flask as it's backend framework along with the Pymoo library
                                 </CardDescription>
                                 <CardContent>
                                     <div className="flex justify-center items-center pt-5">
@@ -40,7 +41,8 @@ function Projects() {
                                     visualise the history of my GitHub repositories. The project uses the GitHub API
                                     to fetch the data and then displays it in a timeline format. In addition to this, 
                                     the project also sanitises the data to remove any redundant information and reduce
-                                    data the overall data being parsed to the frontend.
+                                    data the overall data being parsed to the frontend. This project was created using
+                                    React and JavaScript for the frontend, with a ExpressJS backend to handle the API requests.
                                 </CardDescription>
                                 <CardContent>
                                     <div className="flex justify-center items-center pt-5">
