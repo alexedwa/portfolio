@@ -1,5 +1,6 @@
 import { Separator } from "@/components/ui/separator";
 import { Button } from "@/components/ui/button";
+import '../App.css'
 
 function About() {
     return(
@@ -16,6 +17,13 @@ function About() {
                 my skillset, but also to use these new skills to create something unique.
                 </p>
 
+                <div className="container mx-auto px-4 bg-gray-800 rounded-sm p-4 mt-6 shadow-md">
+                    <div className="text-lg text-shadow-lg text-white font-bold overflow-hidden whitespace-nowrap">
+                        <div className="inline-block animate-scroll">
+                            HTML/CSS | JavaScript | TypeScript | Java | Python | React | ExpressJS | Flask | Tailwind | SQL | Git/GitHub | Agile
+                        </div>
+                    </div>
+                </div>
                 <Separator orientation="horizontal" className="my-4" />
 
                 <h1 className="text-center text-2xl mb-5">Curriculum Vitae</h1>
