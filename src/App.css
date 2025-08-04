@@ -8,7 +8,8 @@
 body {
   background-color: oklch(96.7% 0.003 264.542);
   background-image: radial-gradient(#000 1px, transparent 1px);
-  background-size: 60px 60px; /* controls spacing between dots */
+  background-size: 60px 60px;
+  background-attachment: fixed;
 }
 
 .logo {
