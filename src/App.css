@@ -5,6 +5,12 @@
   text-align: center;
 }
 
+body {
+  background-color: oklch(96.7% 0.003 264.542);
+  background-image: radial-gradient(#000 1px, transparent 1px);
+  background-size: 60px 60px; /* controls spacing between dots */
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;
@@ -18,15 +24,6 @@
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 @media (prefers-reduced-motion: no-preference) {
   a:nth-of-type(2) .logo {
     animation: logo-spin infinite 20s linear;
@@ -37,10 +34,8 @@
   padding: 2em;
 }
 
-.read-the-docs {
-  color: #888;
-}
 
+/* SCROLLING TEXT */
 @keyframes scroll {
 
   0% {
@@ -56,8 +51,6 @@
   }
 
 }
-
-
 
 .animate-scroll {
 

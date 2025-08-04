@@ -1,6 +1,6 @@
 function Footer() {
     return(
-        <div className="w-screen bg-gray-100">
+        <div className="w-screen border-t-2 bg-gray-200">
             <div className="p-7 text-center">
                 <a className="m-3 text-gray-600 hover:text-gray-400" 
                 href="https://github.com/alexedwa" target="_blank">GitHub</a>

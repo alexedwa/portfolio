@@ -4,7 +4,7 @@ import '../App.css'
 
 function About() {
     return(
-        <div className="px-4 py-8 bg-gray-100 w-screen m-0 items-center justify-center" id="about">
+        <div className="px-4 py-8 bg-transparent w-screen m-0 items-center justify-center" id="about">
             <div className="container mx-auto px-4 mt-20 rounded-sm p-10 bg-gray-200 m-2 shadow-md hover:shadow-xs transition-shadow duration-300">
                 <h1 className="text-center text-2xl mb-5">About Me</h1>
                 <p className="text-justify">
@@ -17,7 +17,7 @@ function About() {
                 my skillset, but also to use these new skills to create something unique.
                 </p>
 
-                <div className="container mx-auto px-4 bg-gray-800 rounded-sm p-4 mt-6 shadow-md">
+                <div className="container mx-auto px-4 bg-gray-900 rounded-sm p-4 mt-6 shadow-md">
                     <div className="text-lg text-shadow-lg text-white font-bold overflow-hidden whitespace-nowrap">
                         <div className="inline-block animate-scroll">
                             HTML/CSS | JavaScript | TypeScript | Java | Python | React | ExpressJS | Flask | Tailwind | SQL | Git/GitHub | Agile
