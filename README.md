@@ -7,6 +7,7 @@ This is my portfolio website where I showcase what I have build.
 These are the framworks and libraries used in this project.
 * [React](https://reactjs.org/) - Frontend Framework.
 * [Tailwind CSS](https://tailwindcss.com/) - CSS Framework.
+* [Motion](https://motion.dev/) - Animation Library.
 
 ## License
 
