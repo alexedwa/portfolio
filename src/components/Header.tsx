@@ -12,7 +12,7 @@ function Header() {
 
     return(
         <header>
-            <div className="fixed w-screen top-0 z-1 border-2 border-b-gray-300 bg-gray-200">
+            <div className="fixed w-screen top-0 z-1 border-2 border-b-gray-300 bg-white">
                 <div className="container mx-auto px-4">
                     <div className="flex items-center justify-between h-16">
                         <div className="flex items-center space-x-2">
@@ -22,11 +22,11 @@ function Header() {
                         {/* Desktop menu buttons */}
                         <nav className="hidden md:flex item-center space-x-3">
                             <a className="hover:bg-gray-300 transition-colors p-1 rounded-sm" href="#about">About Me</a>
-                            <Separator orientation="vertical"/>
+                            <Separator orientation="vertical" className="mx-2" />
                             <a className="hover:bg-gray-300 transition-colors p-1 rounded-sm" href="#projects">Projects</a>
-                            <Separator orientation="vertical" />
+                            <Separator orientation="vertical" className="mx-2" />
                             <a className="hover:bg-gray-300 transition-colors p-1 rounded-sm" href="mailto:alexedwa123@gmail.com">Contact</a>
-                            <Separator orientation="vertical" />
+                            <Separator orientation="vertical" className="mx-2" />
                             <a className="hover:bg-gray-300 transition-colors p-1 rounded-sm" href="https://github.com/alexedwa" target="_blank">GitHub</a>
                         </nav>
 
