@@ -1,10 +1,15 @@
 import { Separator } from "@/components/ui/separator";
 import { Button } from "@/components/ui/button";
+import { motion } from "motion/react"
 import '../App.css'
 
 function About() {
     return(
-        <div className="px-4 py-8 bg-transparent w-screen m-0 items-center justify-center" id="about">
+        <motion.div className="px-4 py-8 bg-transparent w-screen m-0 items-center justify-center" id="about"
+        initial={{ y: 150, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        viewport={{ once: true, amount: 0.7 }}
+        transition={{ duration: 0.5 }}>
             <div className="container mx-auto px-4 mt-20 rounded-xl p-10 bg-white m-2 shadow-xl">
                 <h1 className="text-center text-2xl mb-5">About Me</h1>
                 <p className="text-justify">
@@ -45,6 +50,9 @@ function About() {
                                 <div className="rounded-md border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-foreground flex items-center gap-1.5">
                                     <span>Tailwind CSS</span>
                                 </div>
+                                <div className="rounded-md border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-foreground flex items-center gap-1.5">
+                                    <span>Vite</span>
+                                </div>
                             </div>
                         </div>
 
@@ -66,22 +74,19 @@ function About() {
 
                         {/* Tools Column */}
                         <div className="container mx-auto rounded-xl border-1 shadow-md p-4">
-                            <span className="text-xl mb-2 block">Development Tools</span>
+                            <span className="text-xl mb-2 block">Tools</span>
                             <div className="flex flex-wrap gap-2">
                                 <div className="rounded-md border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-foreground flex items-center gap-1.5">
                                     <span>Git</span>
                                 </div>
                                 <div className="rounded-md border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-foreground flex items-center gap-1.5">
-                                    <span>GitHub</span>
-                                </div>
-                                <div className="rounded-md border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-foreground flex items-center gap-1.5">
                                     <span>Docker</span>
                                 </div>
                                 <div className="rounded-md border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-foreground flex items-center gap-1.5">
-                                    <span>Vite</span>
+                                    <span>REST APIs</span>
                                 </div>
                                 <div className="rounded-md border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-foreground flex items-center gap-1.5">
-                                    <span>REST APIs</span>
+                                    <span>AWS</span>
                                 </div>
                             </div>
                         </div>
@@ -99,7 +104,7 @@ function About() {
                     </Button>
                 </div>
             </div>
-        </div>
+        </motion.div>
     );
 }
 

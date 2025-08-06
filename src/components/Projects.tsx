@@ -1,11 +1,19 @@
 import { Card, CardDescription, CardHeader, CardTitle, CardContent } from "./ui/card";
+import { motion } from "motion/react";
 import GitStory from "../assets/git-story.jpg";
 import EA from "../assets/EA_Dashboard.jpg";
 import Portfolio from "../assets/portfolio.jpg";
 
+
 function Projects() {
+
+    
     return (
-        <div className="px-4 py-8 bg-transparent w-screen m-0" id="projects">
+        <motion.div className="px-4 py-8 bg-transparent w-screen m-0" id="projects"
+        initial={{ y: 150, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        viewport={{ once: true, amount: 0.2 }}
+        transition={{ duration: 0.5 }}>
             <div className="mt-20 items-center justify-center">
                 <div className="container mx-auto px-4 rounded-xl p-10 bg-white m-2 shadow-xl">
                     <h1 className="text-center text-2xl mb-5">Projects</h1>
@@ -28,7 +36,7 @@ function Projects() {
                                 </CardDescription>
                                 <CardContent>
                                     <div className="flex justify-center items-center pt-5">
-                                        <img src={EA} className="w-auto h-auto" alt="EA Dashboard homepage"/>
+                                        <img src={EA} className="w-auto h-auto aspect-video" alt="EA Dashboard homepage" loading="lazy"/>
                                     </div>
                                 </CardContent>
                             </CardHeader>
@@ -50,7 +58,7 @@ function Projects() {
                                 <CardContent>
                                     <div className="flex justify-center items-center pt-5">
                                         <a href="https://github.com/alexedwa/git-story">
-                                        <img src={GitStory} className="w-auto h-auto" alt="Git Story homepage"/></a>
+                                        <img src={GitStory} className="w-auto h-auto aspect-video" alt="Git Story homepage" loading="lazy"/></a>
                                     </div>
                                 </CardContent>
                             </CardHeader>
@@ -70,7 +78,7 @@ function Projects() {
                                 <CardContent>
                                     <div className="flex justify-center items-center pt-5">
                                         <a href="https://alexedwa.github.io/portfolio/" target="_blank">
-                                        <img src={Portfolio} className="w-auto h-auto" alt="Git Story homepage"/></a>
+                                        <img src={Portfolio} className="w-auto h-auto aspect-video" alt="Portfolio" loading="lazy"/></a>
                                     </div>
                                 </CardContent>
                             </CardHeader>
@@ -78,7 +86,7 @@ function Projects() {
                     </div>
                 </div>
             </div>
-        </div>
+        </motion.div>
     );
 }
 
