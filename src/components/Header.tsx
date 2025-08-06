@@ -12,7 +12,7 @@ function Header() {
 
     return(
         <header>
-            <div className="fixed w-screen top-0 z-1 border-2 border-b-gray-300 bg-white">
+            <div className="fixed w-screen top-0 z-1 border-2 border-b-gray-400 bg-white shadow-xl">
                 <div className="container mx-auto px-4">
                     <div className="flex items-center justify-between h-16">
                         <div className="flex items-center space-x-2">
@@ -52,9 +52,9 @@ function Header() {
                             top: 68,
                             left: 0,
                             right: 0,
-                            height: 10,
+                            height: 3,
                             originX: 0,
-                            backgroundColor: "#71717A"
+                            backgroundColor: "#99a1af"
                         }}>     
                 </motion.div>
             </div>
